@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Saya</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Portfolio Saya</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <section id="education">
+          <h2><i class="fas fa-school"></i> Pendidikan</h2>
+          <article class="card">
+            <div class="gambar">
+              <img src="image/smk.jpeg" alt="logo smk" srcset="" />
+            </div>
+            <div class="deskripsi" style="flex: 2; margin-left: 20px">
+              <h3 class="title">SMK Ibrahimy 1 Sukorejo</h3>
+              <p>
+                Saya memulai perjalanan pendidikan di SMK Ibrahimy 1 Sukorejo,
+                mengambil jurusan Teknik Komputer dan Jaringan. Di sini, saya
+                mendapatkan dasar-dasar pengetahuan tentang teknologi jaringan,
+                perangkat keras, serta perangkat lunak komputer. Kurikulum yang
+                fokus pada praktik telah memberikan saya pengalaman langsung
+                dalam instalasi, konfigurasi, dan pemeliharaan jaringan
+                komputer. Selain keterampilan teknis, saya juga belajar tentang
+                kedisiplinan dan manajemen waktu, yang sangat membantu dalam
+                berbagai tantangan akademik dan praktis. Pengalaman di SMK ini
+                menjadi landasan kuat untuk melanjutkan pendidikan ke jenjang
+                berikutnya.
+              </p>
+            </div>
+            <a
+              href="https://www.example.com"
+              target="_blank"
+              class="button"
+              style="
+                position: absolute;
+                right: 15px;
+                top: 10px;
+                color: inherit;
+                text-decoration: none;
+              "
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </article>
+          <article class="card">
+            <div class="gambar">
+              <img src="image/unib.jpeg" alt="logo smk" srcset="" />
+            </div>
+
+            <div class="deskripsi" style="flex: 2; margin-left: 20px">
+              <h3 class="title">Universitas Ibrahimy</h3>
+
+              <p>
+                Setelah lulus dari SMK, saya melanjutkan pendidikan ke jenjang
+                sarjana di Universitas Ibrahimy, mengambil jurusan Teknik
+                Informatika. Di universitas, saya mendalami berbagai disiplin
+                ilmu di bidang teknologi informasi, termasuk pengembangan
+                perangkat lunak, sistem basis data, desain antarmuka pengguna
+                (UI/UX), serta analisis dan desain sistem. Salah satu pencapaian
+                yang membanggakan selama masa kuliah adalah berhasil meraih
+                predikat Cumlaude dengan IPK 3,69. Ini menjadi bukti kerja keras
+                saya dalam belajar dan beradaptasi dengan tantangan akademik.
+              </p>
+            </div>
+            <a
+              href="https://www.example.com"
+              target="_blank"
+              class="button"
+              style="
+                position: absolute;
+                right: 15px;
+                top: 10px;
+                color: inherit;
+                text-decoration: none;
+              "
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </article>
+        </section>
+
+        <section id="projects">
+          <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+          <div class="card">
+            <h3>Project 1: Website Portfolio</h3>
+            <p>
+              Desain dan implementasi website portfolio yang responsif
+              menggunakan HTML, CSS, dan JavaScript.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Project 2: E-commerce Platform</h3>
+            <p>
+              Membangun platform e-commerce sederhana dengan fitur keranjang
+              belanja dan checkout menggunakan JavaScript.
+            </p>
+          </div>
+        </section>
+      </div>
+      <aside id="about">
+        <h2>About Me</h2>
+        <div class="img-box">
+          <img src="image/pp.jpg" alt="Your Profile Photo" />
+        </div>
+        <table
+          style="
+            border-collapse: collapse;
+            border-spacing: 10px;
+            line-height: 30px;
+          "
+        >
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>A. Muzacky Naufal Ammar</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td>Banyuwangi - Jawa Timur</td>
+          </tr>
+        </table>
+        <div id="socialMedia" style="display: none">
+          <div class="card">
+            <i class="fab fa-instagram"></i>
+            <a
+              href="https://www.instagram.com/anu.tok__/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @anu.tok__
+            </a>
+          </div>
+          <div class="card">
+            <i class="fab fa-linkedin-in"></i>
+            <a
+              href="https://www.linkedin.com/in/a-muzacky-na  /"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @a-muzacky-na
+            </a>
+          </div>
+        </div>
+        <button id="detail" onclick="detail()">Detail</button>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Portfolio . All rights reserved.</p>
+    </footer>
+    <script>
+      function detail() {
+        const showMoreButton = document.getElementById("detail");
+        const socialMedia = document.getElementById("socialMedia");
+
+        showMoreButton.addEventListener("click", function () {
+          if (socialMedia.style.display === "none") {
+            socialMedia.style.display = "block";
+            showMoreButton.textContent = "Lebih Sedikit";
+          } else {
+            socialMedia.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

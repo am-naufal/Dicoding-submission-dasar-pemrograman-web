@@ -1,0 +1,229 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: inline;
+}
+.jumbotron {
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  padding: 0.5rem 0;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+  }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.content {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.content {
+  justify-items: center;
+}
+section {
+  margin-bottom: 1rem;
+
+}
+
+section h2 {
+  text-align: center;
+}
+#education article {
+  display: flex; 
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+ 
+.gambar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+}
+.gambar > img{
+  margin: auto;
+  background-position: center;
+}
+.deskripsi p {
+  font-size: 12pt;
+  text-align: justify;
+}
+
+section#projects{
+  margin: auto;
+}
+
+aside {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10pt;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.img-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#socialMedia a {
+  margin: 0 1rem;
+  color: #000;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+#socialMedia>.card:hover {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  
+
+  button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 10pt;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+  
+  nav a {
+    margin: 0.5rem 0;
+  }
+  #content {
+    padding: none;
+    width: 100%;
+  }
+  article {
+    margin-right: 0;
+    margin-bottom: 1rem;
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 12pt;
+    
+  }
+  #education {
+    width: 100%;
+  }
+  #education .card {
+    background-color: #fff;
+  }
+  #education > article {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content{
+    padding: 0;
+  }
+}
+
+
